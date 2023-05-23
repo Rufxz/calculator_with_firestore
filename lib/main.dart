@@ -4,6 +4,8 @@ import 'package:mobx/mobx.dart';
 import 'package:intl/intl.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 
 class CalculationHistory {
   int id;
@@ -125,6 +127,16 @@ class CalculatorModel {
       history.add(calculation);
     }
   }
+}
+
+void saveCalculation(String expression, String result) {
+  final timestamp = DateTime.now();
+  final calculationData = {
+    'expression': expression,
+    'result': result,
+    'timestamp': timestamp.toIso8601String(),
+  };
+  FirebaseFirestore.instance.collection('History').add(calculationData);
 }
 
 void main() async {
