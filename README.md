@@ -1,16 +1,6 @@
-# calculator_with_history
+# calculator_with_firestore
 
-A new Flutter project.
+This Calculator app is a fully functioning app, with all the required functionalites, the only added functionality is that it sends the history of calculations to firebase.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Custom Rules in Firestore
+![firebase](https://github.com/Rufxz/calculator_with_firestore/assets/100163753/2f1fa721-cd6a-49f0-8dd0-3c2f74cf26b5)
